@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.bg{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    position: absolute;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 330px;
+    height: 450px;
+    background-color: transparent; /*Changed */
+    position: absolute;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    backdrop-filter: blur;
+}
+.form .user-input{
+    width: 300px;
+    height: 42px;
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,0.5);
+    border-color: rgba(255,255,255,0.5);
+    border-radius:15px;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+}
+.form .signup{
+    display:none;
+}
+.form .option1{
+    margin-bottom: 20px;
+}
+.form .option1 input{
+    width:15px;
+    height:15px;
+    margin-right: 5px;
+}
+.form .option1 .remember-me{
+    font-size: 14px;
+    color:rgba(255,255,255,0.5);
+    display: flex;
+    float: left;
+    cursor:pointer;
+}
+.form .option1 a{
+    float:right;
+    color: rgba(0,0,0);
+    font-size: 14px;
+    cursor:pointer;
+    font-style: italic;
+}
+.form .btn{
+    height: 50px;
+    width: 300px;
+    margin-top: 30px;
+    border:none;
+    color:white;
+    background: black;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 10px;
+    transition-property: border-left, border-right, box-shadow;
+}
+.form .btn2{
+    height: 50px;
+    width: 300px;
+    margin-top: 10px;
+    border:none;
+    color:white;
+    background: black;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 10px;
+    transition-property: border-left, border-right, box-shadow;
+}
+.form .btn:hover{
+    border-left: solid 8px rgba(255,255,255);
+    border-right: solid 8px rgba(255,255,255);
+    box-shadow: 0 0 100px rgba(0,0,0,0.5);
+}
+.form .btn2:hover{
+    border-left: solid 8px rgba(255,255,255);
+    border-right: solid 8px rgba(255,255,255);
+    box-shadow: 0 0 100px rgba(0,0,0,0.5);
+}
+.form .option2{
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 40px;
+}
+.form .option2 p{
+    font-style: italic;
+}
+.form .option2 a{
+    font-size: 15px;
+    color: black;
+    font-weight: bolder ;
+    cursor:pointer;
+}
+
+/* Responsive CSS Design */
+@media screen and (max-width:1000px){
+    .form{
+        width:95%;
+    }
+    .form .user-input{
+        width:95%;
+    }
+    .form .btn{
+        width: 95%;
+    }
+    .form .btn2{
+        width: 95%;
+    }
+    .form .option1{
+        width:95%
+    }
+    .form .option2{
+        width:95%
+    }
+
+}

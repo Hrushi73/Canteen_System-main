@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <!-- For SEO purposes -->
+  <meta name="description" content="PICT College Canteen Website">
+  <meta name="keywords" content="PICT Canteen, Canteen Website">
+  <meta name="author" content="Group II">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.sidebarbtn').click(function(){
+        $('.sidebar').toggleClass('active');
+        $('.sidebarbtn').toggleClass('toggle');
+      })
+    })
+  </script>
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="#"><div class="center"><i class="material-icons" style="font-size:100px;text-shadow: 0 0 5px #fff;">account_circle</i><p>User Account</p></div></a></li>
+      <li><a href="#"><i class="material-icons" style="font-size:27px;text-shadow: 0 0 5px #fff;">restaurant_menu</i> Today's Menu</a></li>
+      <li><a href="#"><i class="material-icons" style="font-size: 27px;text-shadow: 0 0 2px #fff;">summarize</i>Subscription History</a></li>
+      <li><a href="#"><i class="material-icons"style="font-size: 27px;text-shadow: 0 0 3px #fff;">receipt_long</i>Order History</a></li>
+      <li><a href="#"><i class="material-icons"style="font-size: 27px;text-shadow: 0 0 3px #fff;">account_balance_wallet</i>Wallet Balance</a></li>
+    </ul>
+    <button class="sidebarbtn">
+      <span></span>
+    </button>
+  </div>
+</body>
+</html>

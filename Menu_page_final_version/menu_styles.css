@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box; /*so that whenever a padding is applied to any element its width does not increase automatically*/
+}
+
+#title {
+  background: rgba(255, 255, 255, 0.4);
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 3%;
+  min-height: 70px;
+  border-bottom: #ea2027 3px solid;
+}
+#title {
+  float: left;
+  width: 100%;
+}
+#title h1 {
+  float: left;
+  font-size: 40px;
+  font-family: Lobster;
+  font-style: oblique;
+  margin: 0;
+}
+#title .highlight {
+  color: #fff200;
+  font-size: 40px;
+  font-style: oblique;
+  font-family: Lobster;
+  font: weight 1px;
+}
+
+#titleicons li {
+  float: left;
+  display: inline;
+}
+#titleicons i {
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#titleicons ul {
+  float: right;
+}
+
+#titleicons i:hover {
+  color: white;
+  opacity: 50%;
+  text-shadow: white;
+}
+body {
+  background-image: url("./B3.jpeg");
+  font-family: Arial, Helvetica, sans-serif;
+
+  padding: 0;
+  margin: 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+ul {
+  margin: 0;
+  padding: 0px 0;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  padding: 10px 20px;
+  color: whitesmoke;
+  display: block;
+  text-decoration: none;
+}
+a span {
+  position: absolute;
+  display: block;
+}
+.sidebar a:hover {
+  color: whitesmoke;
+  background: rgba(253, 9, 9, 0.5);
+  box-shadow: 0 0 40px whitesmoke, 0 0 80px whitesmoke, 0 0 100px whitesmoke;
+  border-radius: 30px;
+  transition-delay: 0.095s;
+}
+.sidebar {
+  position: fixed;
+  top: 180px;
+  left: -250px;
+  background: rgba(253, 9, 9, 0.6);
+  width: 250px;
+  height: 100%;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.active {
+  left: 0;
+}
+
+.sidebarbtn {
+  position: fixed;
+  top: 130px; /**/
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: rgba(253, 9, 9, 0.7); /**/
+  border: none;
+  border-top-right-radius: 10px;
+  outline: none;
+}
+.sidebarbtn span {
+  display: block;
+  width: 35px;
+  height: 2.5px;
+  background: whitesmoke;
+  position: absolute;
+  top: 24px;
+  transition: 00.3s;
+}
+.sidebarbtn span::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background: whitesmoke;
+  transition: 00.3s;
+}
+.sidebarbtn span::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background: whitesmoke;
+  transition: 00.3s;
+}
+.sidebarbtn.toggle span {
+  background: transparent;
+}
+.sidebarbtn.toggle span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.sidebarbtn.toggle span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.sidebar .center i {
+  text-align: center;
+  width: 100%;
+}
+.sidebar .center p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+a span {
+  position: absolute;
+  display: block;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    width: 150px;
+  }
+}
+#box {
+  border-color: black;
+  background-color: rgb(201, 195, 209);
+  width: 800px;
+  height: 395px;
+  margin-left: 350px;
+  margin-top: 25px;
+  padding-left: 30px;
+  padding-top: 20px;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+#user_logo img {
+  height: 150px;
+  margin-left: 630px;
+}
+#User {
+  background-color: rgb(116, 203, 214);
+  height: 50px;
+  width: 1196px;
+  border-color: solid black;
+  margin: 0px;
+  padding-left: 500px;
+  border-radius: 10px;
+  opacity: 0.1;
+}
+#line {
+  width: 740px;
+  margin-left: 8px;
+  height: 5px;
+  color: black;
+  background-color: black;
+  opacity: 0.9;
+}
+#info {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: black;
+  margin-left: 41px;
+  margin-top: 39;
+  font-weight: bold;
+}
+
+.search_container {
+  margin: 5px;
+  padding: 2px;
+  width: 50%;
+  float: right;
+}
+
+.subscribed_item_bar {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.4)
+  );
+  padding: 0px 20px;
+  clear: right;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.subscribed_item_bar h2,
+.availble_item_container h2 {
+  margin: 2px 0px;
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+
+.availble_item_container {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.4)
+  );
+  padding: 0 20px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.food_comp {
+  position: relative;
+  background-color: rgba(253, 9, 9, 0.7);
+  height: 200px;
+  width: 400px;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.name_and_price {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+.name_and_price h2 {
+  color: whitesmoke;
+}
+
+.chkbox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.image_container {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.image {
+  padding: 25% 0;
+  width: 100%;
+  height: auto;
+}
+
+.goRight {
+  margin-left: 255px;
+}
+
+@media screen and (max-width: 768px) {
+  .goRight {
+    margin-left: 160px;
+  }
+}
+
+#content {
+  margin: 0 100px;
+}

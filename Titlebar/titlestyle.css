@@ -1,0 +1,89 @@
+*{
+  box-sizing: border-box;/*so that whenever a padding is applied to any element its width does not increase automatically*/
+}
+
+#title
+{
+  background:rgba(255, 255, 255, 0.4) ;
+  color :white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 3%;
+  min-height: 70px;
+  border-bottom:#EA2027 3px solid ;
+}
+#title
+{
+  float: left;
+  width: 100%;
+}
+#title h1
+{
+  float: left;
+  font-size: 40px;
+  font-family: Lobster;
+  font-style: oblique;
+  margin:0;
+}
+#title .highlight
+{
+  color: #fff200;
+  font-size: 40px;
+  font-style: oblique;
+  font-family: Lobster;
+  font: weight 1px;
+}
+
+#titleicons li
+{
+  float: left;
+  display: inline;
+  
+}
+#titleicons i
+{
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#titleicons ul
+{
+  float: right;
+}
+
+#titleicons i:hover
+{
+  color: white;
+  opacity: 50%;
+  text-shadow:white;
+}
+body{
+  background-image: url("./canteen.jpg");
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+ul
+{
+  margin: 0;
+  padding: 0px 0;
+}
+ul li
+{
+  list-style: none;
+}
+ul li a
+{
+  padding: 10px 20px;
+  color: whitesmoke;
+  display: block;
+  text-decoration: none;
+  border-bottom: rgba(255, 255, 255, 0.15) 1px solid;
+}
+a span
+{
+  position: absolute;
+  display: block;
+}
